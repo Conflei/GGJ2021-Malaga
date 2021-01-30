@@ -17,7 +17,7 @@ public class PersonajeOscar : MonoBehaviour
 
     public GameObject AbalorioSalto;
 
-
+    public bool PuedesAtacar;// bool para intentar q no se repita la animacion de ataque al presionar repetidamente la tecla.
 
     private int congelar = 1; //Congela el movimiento desde el animation poniendo su valor a 0 en rb.velocity
     public CanvasController canvasController;
@@ -153,7 +153,7 @@ public class PersonajeOscar : MonoBehaviour
 
             if (tengoHacha)
             {
-                if (attackColliderHacha.enabled == false)
+                if (PuedesAtacar)
                 {
                    // attackColliderHacha.enabled = true;
                     transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
@@ -163,7 +163,7 @@ public class PersonajeOscar : MonoBehaviour
 
             if (tengoPalanca)
             {
-                if (attackColliderPalanca.enabled == false)
+                if (PuedesAtacar)
                 {
                    // attackColliderPalanca.enabled = true;
                     transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
@@ -183,10 +183,14 @@ public class PersonajeOscar : MonoBehaviour
         attackColliderHacha.enabled = true;
         attackColliderPalanca.enabled = true;
     }
+    public void PuedeAtacar()
+    {
+        PuedesAtacar = true;
+    }
     public void NOAtacar()
     {
-        attackColliderHacha.enabled = false;
-        attackColliderPalanca.enabled = false;
+
+        PuedesAtacar = false;
     }
     public void CongelaMovimiento()
     {
