@@ -14,6 +14,8 @@ public class PersonajeOscar : MonoBehaviour
 
     public GameObject LamparaLuz;
     public GameObject LinternaLuz;
+    public bool TengoLampara = false;
+    public bool TengoLinterna = false;
 
     public GameObject AbalorioSalto;
 
@@ -69,26 +71,29 @@ public class PersonajeOscar : MonoBehaviour
     
     void Update()
     {
-        enSuelo = Physics2D.OverlapCircle(refPlayer.position, 0.3f, 1 << 8); //Definicion suelo
-        anim.SetBool("enSuelo", enSuelo); //Animator suelo
-       
-        float movX;
-        
-        movX = Input.GetAxis("Horizontal"); //Eje horizontal
-        anim.SetFloat("absMovX", Mathf.Abs(movX)); //Animacion movimiento en funcion valor movX
-        rb.velocity = new Vector2(movX  * congelar * speed, rb.velocity.y); //
-      
-        if (movX < 0) transform.localScale = new Vector3(-tamañoX, tamañoY, 1); //Cambiar escala a negativo al disminuir movimiento X
-        if (movX > 0) transform.localScale = new Vector3(tamañoX, tamañoY, 1);
-
-        if ((Input.GetKeyDown(KeyCode.Space) && enSuelo ))
+        if (hp >= 1)
         {
-           
+            enSuelo = Physics2D.OverlapCircle(refPlayer.position, 0.3f, 1 << 8); //Definicion suelo
+            anim.SetBool("enSuelo", enSuelo); //Animator suelo
+
+            float movX;
+
+            movX = Input.GetAxis("Horizontal"); //Eje horizontal
+            anim.SetFloat("absMovX", Mathf.Abs(movX)); //Animacion movimiento en funcion valor movX
+            rb.velocity = new Vector2(movX * congelar * speed, rb.velocity.y); //
+
+            if (movX < 0) transform.localScale = new Vector3(-tamañoX, tamañoY, 1); //Cambiar escala a negativo al disminuir movimiento X
+            if (movX > 0) transform.localScale = new Vector3(tamañoX, tamañoY, 1);
+
+            if ((Input.GetKeyDown(KeyCode.Space) && enSuelo))
+            {
+
                 jump = true;
-            
+
+            }
+            Pausa();
+            Atacar();
         }
-        Pausa();
-        Atacar();
         /*
         if (Input.GetKeyDown(KeyCode.K))
         {
@@ -122,22 +127,25 @@ public class PersonajeOscar : MonoBehaviour
             Palanca.SetActive(true);
         }
 
-        
-       
 
+
+
+        canvasController.barraVerde.fillAmount = (float)hp / maxHp;
 
         if (hp <= 0)
         {
-            anim.Play("Muerte");
+            canvasController.iniciarFadeOut();
         }
     }
     public void CogerHacha()
     {
         tengoHacha = true;
+        Destroy(Palanca);
     }
     public void CogerPalanca()
     {
         tengoPalanca = true;
+        Destroy(Hacha);
     }
     
     public void ActualizarVida()
@@ -156,7 +164,7 @@ public class PersonajeOscar : MonoBehaviour
                 if (PuedesAtacar)
                 {
                    // attackColliderHacha.enabled = true;
-                    transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
+                    transform.position = transform.position + new Vector3(0.009f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
                     anim.SetTrigger("Atacar");
                 }
             }
@@ -166,7 +174,7 @@ public class PersonajeOscar : MonoBehaviour
                 if (PuedesAtacar)
                 {
                    // attackColliderPalanca.enabled = true;
-                    transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
+                    transform.position = transform.position + new Vector3(0.009f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
                     anim.SetTrigger("Atacar");
                 }
             }
@@ -183,6 +191,11 @@ public class PersonajeOscar : MonoBehaviour
         attackColliderHacha.enabled = true;
         attackColliderPalanca.enabled = true;
     }
+    public void NOAtacarArma()
+    {
+        attackColliderHacha.enabled = false;
+        attackColliderPalanca.enabled = false;
+    }
     public void PuedeAtacar()
     {
         PuedesAtacar = true;
@@ -192,10 +205,12 @@ public class PersonajeOscar : MonoBehaviour
 
         PuedesAtacar = false;
     }
+
     public void CongelaMovimiento()
     {
         congelar = 0;
     }
+
     public void NOCongelarMovimiento()
     {
         congelar = 1;
@@ -214,10 +229,13 @@ public class PersonajeOscar : MonoBehaviour
     public void Linterna()
     {
         LinternaLuz.SetActive(true);
+        Destroy(LamparaLuz);
     }
+
     public void Lampara()
     {
         LamparaLuz.SetActive(true);
+        Destroy(LinternaLuz);
     }
 
     private void Pausa()
