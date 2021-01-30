@@ -14,8 +14,11 @@ public class PersonajeOscar : MonoBehaviour
 
     public GameObject LamparaLuz;
     public GameObject LinternaLuz;
+    public GameObject innerLight;
 
     public GameObject AbalorioSalto;
+
+
 
     public bool PuedesAtacar;// bool para intentar q no se repita la animacion de ataque al presionar repetidamente la tecla.
 

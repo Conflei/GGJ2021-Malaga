@@ -13,6 +13,8 @@ public class CanvasController : MonoBehaviour
     public Canvas CanvasDroga;
     public Canvas CanvasLuz;
 
+    private PersonajeOscar personaje;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class CanvasController : MonoBehaviour
         CanvasArma.enabled = false;
         CanvasDroga.enabled = false;
         CanvasLuz.enabled = false;
+        personaje = this.GetComponent<PersonajeOscar>();
     }
 
     // Update is called once per frame
@@ -67,6 +70,7 @@ public class CanvasController : MonoBehaviour
     {
         if (col.collider.tag =="escogerArma")
         {
+            
             CanvasArma.enabled = true;
             Destroy(col.gameObject);
             Time.timeScale = 0;
@@ -81,6 +85,7 @@ public class CanvasController : MonoBehaviour
 
         if (col.collider.tag =="escogeLuz")
         {
+            personaje.innerLight.SetActive(false);
             CanvasLuz.enabled = true;
             Destroy(col.gameObject);
             Time.timeScale = 0;
