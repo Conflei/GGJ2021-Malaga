@@ -7,7 +7,7 @@ public class PersonajeOscar : MonoBehaviour
 {
     //Movimiento: A y D      Salto: Espacio      Pausa: P     Ataque: L (?)
     
-    public Canvas canvasPausa;
+    public CanvasController canvasController;
     public int hp = 3;
     public int maxHp = 3;
     public float tamañoX;
@@ -19,10 +19,7 @@ public class PersonajeOscar : MonoBehaviour
     public float fuerzaSalto = 250f;
     private bool jump;
     public Transform refPlayer;
-    float valorAlfaDeseadoTelaNegra;
     public bool enSuelo;
-    public UnityEngine.UI.Image telaNegra;
-    public UnityEngine.UI.Image barraVerde;
     bool active; //para la pausa
 
     /* public bool isClimbing;
@@ -43,9 +40,6 @@ public class PersonajeOscar : MonoBehaviour
         anim = GetComponent<Animator>();
         attackCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
         attackCollider.enabled = false;
-        telaNegra.color = new Color(0, 0, 0); //Color inicial fade.
-        valorAlfaDeseadoTelaNegra = 0;
-        canvasPausa.enabled = false;
         hp = maxHp;
 
     }
@@ -111,17 +105,7 @@ public class PersonajeOscar : MonoBehaviour
             {
                 rb.gravityScale = 4;
             }*/
-            
-        
-        
 
-        float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .03f); //
-        telaNegra.color = new Color(0, 0, 0, valorAlfa);
-
-        if (valorAlfa > 0.99f && valorAlfaDeseadoTelaNegra == 1)
-        {
-           // SceneManager.LoadScene();
-        }
 
         if (hp <= 0)
         {
@@ -129,13 +113,10 @@ public class PersonajeOscar : MonoBehaviour
         }
     }
 
-    public void iniciarFadeOut()
-    {
-        valorAlfaDeseadoTelaNegra = 1; //Se llama desde la animacion de muerte
-    }
+    
     public void ActualizarVida()
     {
-        barraVerde.fillAmount = (float)hp / maxHp;
+        canvasController.barraVerde.fillAmount = (float)hp / maxHp;
     }
 
     public void Atacar()
@@ -166,13 +147,13 @@ public class PersonajeOscar : MonoBehaviour
             if (active)
             {
                 anim.enabled = false; //Para evitar que se reproduzcan animaciones con el menu de pausa
-                canvasPausa.enabled = true;
+                canvasController.canvasPausa.enabled = true;
                 Time.timeScale = 0;
             }
             else 
             {
                 anim.enabled = true; //Activa las animaciones.
-                canvasPausa.enabled = false;
+                canvasController.canvasPausa.enabled = false;
                 Time.timeScale = 1; 
             }
         }

@@ -17,7 +17,7 @@ public class EnemyTrackingSystem : MonoBehaviour
     void Start()
     {
         this.enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehaviour>();
-        lastNodeTouchedbyEnemy = GameObject.FindGameObjectWithTag("Waypoint").GetComponent<EnemyNode>();
+        lastNodeTouchedbyEnemy = GameObject.FindGameObjectWithTag("Extra").GetComponent<EnemyNode>();
         nodes = new List<EnemyNode>();
 
         for (int i = 0; i < transform.childCount; i++)
@@ -38,12 +38,6 @@ public class EnemyTrackingSystem : MonoBehaviour
         lastNodeTouchedbyPlayer = nodes[index];
         createWay(lastNodeTouchedbyEnemy, lastNodeTouchedbyPlayer);
 
-        print("Best path to get to the player at "+lastNodeTouchedbyPlayer.name);
-        foreach (EnemyNode node in visitingNodes)
-        {
-            print(node.name+" -> ");
-        }
-
         visitingNodes.Reverse();
         StartCoroutine(BeginChase());
     }
@@ -52,12 +46,23 @@ public class EnemyTrackingSystem : MonoBehaviour
     {
         while (visitingNodes.Count >= 1)
         {
-            iTween.MoveTo(enemy.gameObject, iTween.Hash("position", visitingNodes[0].transform.position, "time", 2f, "easeType", iTween.EaseType.linear));
+            iTween.MoveTo(enemy.gameObject, iTween.Hash("position", visitingNodes[0].transform.position, "time", CalculateTime(enemy.transform, visitingNodes[0].transform), "easeType", iTween.EaseType.linear));
             yield return new WaitForSeconds(2f);
 
             visitingNodes.RemoveAt(0);
         }
 
+    }
+
+    public float CalculateTime(Transform currentPos, Transform targetPos)
+    {
+        float time = 2f;
+
+        float dist = Vector3.Distance(currentPos.position, targetPos.position);
+
+        time = (dist * 3f) / 20f;
+ 
+        return time;
     }
 
     public void newNodeTouchedbyEnemyRegistered(int index)
