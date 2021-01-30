@@ -6197,6 +6197,7 @@ MonoBehaviour:
   canvasPausa: {fileID: 634982505}
   telaNegra: {fileID: 931204095}
   barraVerde: {fileID: 316635391}
+  CanvasArma: {fileID: 0}
 --- !u!1 &931204093
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,6 +7804,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera with Global Illumination 2D
       objectReference: {fileID: 0}
+    - target: {fileID: 2689258305943768385, guid: 9ab98a6b7e30146bcaaa13c602eb690f,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689258305943768386, guid: 9ab98a6b7e30146bcaaa13c602eb690f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ab98a6b7e30146bcaaa13c602eb690f, type: 3}
 --- !u!1001 &5778890682561454301
@@ -7901,8 +7912,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.5, y: 7.88}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 5.86, y: 15.47}
     newSize: {x: 6.5, y: 7.88}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

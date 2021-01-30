@@ -10,6 +10,8 @@ public class CanvasController : MonoBehaviour
     public Image barraVerde;
     float valorAlfaDeseadoTelaNegra;
     public Canvas CanvasArma;
+    public Canvas CanvasDroga;
+    public Canvas CanvasLuz;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,8 @@ public class CanvasController : MonoBehaviour
         valorAlfaDeseadoTelaNegra = 0;
         canvasPausa.enabled = false;
         CanvasArma.enabled = false;
+        CanvasDroga.enabled = false;
+        CanvasLuz.enabled = false;
     }
 
     // Update is called once per frame
@@ -42,17 +46,42 @@ public class CanvasController : MonoBehaviour
         valorAlfaDeseadoTelaNegra = 1; //Se llama desde la animacion de muerte
     }
 
+    public void CerrarMenuDroga()
+    {
+        CanvasDroga.enabled = false;
+        Time.timeScale = 1;
+    }
     public void CerrarMenuArma()
     {
         CanvasArma.enabled = false;
         Time.timeScale = 1;
-       // Destroy(escogerArma);
+       
+    }
+
+    public void CerrarMenuLuz()
+    {
+        CanvasLuz.enabled = false;
+        Time.timeScale = 1;
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.tag =="escogerArma")
         {
             CanvasArma.enabled = true;
+            Destroy(col.gameObject);
+            Time.timeScale = 0;
+        }
+
+        if (col.collider.tag == "escogeDroga")
+        {
+            CanvasDroga.enabled = true;
+            Destroy(col.gameObject);
+            Time.timeScale = 0;
+        }
+
+        if (col.collider.tag =="escogeLuz")
+        {
+            CanvasLuz.enabled = true;
             Destroy(col.gameObject);
             Time.timeScale = 0;
         }

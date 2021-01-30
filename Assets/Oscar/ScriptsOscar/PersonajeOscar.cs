@@ -11,7 +11,15 @@ public class PersonajeOscar : MonoBehaviour
     public bool tengoPalanca = false;
     public GameObject Hacha;
     public GameObject Palanca;
-    
+
+    public GameObject LamparaLuz;
+    public GameObject LinternaLuz;
+
+    public GameObject AbalorioSalto;
+
+
+
+    private int congelar = 1; //Congela el movimiento desde el animation poniendo su valor a 0 en rb.velocity
     public CanvasController canvasController;
     public int hp = 3;
     public int maxHp = 3;
@@ -34,9 +42,9 @@ public class PersonajeOscar : MonoBehaviour
       private float movY;
     */
     // Cosas escalera  desde linea 34 hasta la 39 y en el ontriggerstay/triggerexit.
-    public BoxCollider2D escaleraCollider;
+    private BoxCollider2D escaleraCollider;
     public bool onLadder = false;
-    public float climbSpeed;
+    public float climbSpeed = 3;
     public float exitHop = 10f;
     public bool usingLadder = false;
   
@@ -49,7 +57,11 @@ public class PersonajeOscar : MonoBehaviour
         Palanca.SetActive(false);
         attackColliderHacha.enabled = false;
         attackColliderPalanca = transform.GetChild(3).GetComponent<BoxCollider2D>();
+        LamparaLuz.SetActive(false);
+        LinternaLuz.SetActive(false);
+        AbalorioSalto.SetActive(false);
         
+
         hp = maxHp;
 
     }
@@ -64,7 +76,7 @@ public class PersonajeOscar : MonoBehaviour
         
         movX = Input.GetAxis("Horizontal"); //Eje horizontal
         anim.SetFloat("absMovX", Mathf.Abs(movX)); //Animacion movimiento en funcion valor movX
-        rb.velocity = new Vector2(movX  * speed, rb.velocity.y); //
+        rb.velocity = new Vector2(movX  * congelar * speed, rb.velocity.y); //
       
         if (movX < 0) transform.localScale = new Vector3(-tamañoX, tamañoY, 1); //Cambiar escala a negativo al disminuir movimiento X
         if (movX > 0) transform.localScale = new Vector3(tamañoX, tamañoY, 1);
@@ -176,8 +188,33 @@ public class PersonajeOscar : MonoBehaviour
         attackColliderHacha.enabled = false;
         attackColliderPalanca.enabled = false;
     }
-
+    public void CongelaMovimiento()
+    {
+        congelar = 0;
+    }
+    public void NOCongelarMovimiento()
+    {
+        congelar = 1;
+    }
+    
+    public void Abalorio()
+    {
+        AbalorioSalto.SetActive(true);
+        maxHp += 2;
+    }
+    public void Droga()
+    {
+        fuerzaSalto += 50;
+    }
    
+    public void Linterna()
+    {
+        LinternaLuz.SetActive(true);
+    }
+    public void Lampara()
+    {
+        LamparaLuz.SetActive(true);
+    }
 
     private void Pausa()
     {
@@ -201,7 +238,7 @@ public class PersonajeOscar : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.tag =="Fantasma")
+        if (col.collider.tag =="Enemy")
         {
             anim.SetTrigger("Dañado");
         }
@@ -213,7 +250,8 @@ public class PersonajeOscar : MonoBehaviour
         {
             if (Input.GetAxisRaw("Vertical") !=0)
             {
-               
+                escaleraCollider = col.GetComponent<BoxCollider2D>();
+
                 rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * climbSpeed);
                 rb.gravityScale = 0;
                 onLadder = true;
@@ -233,6 +271,7 @@ public class PersonajeOscar : MonoBehaviour
     {
         if (collision.tag == ("Escalera") &&onLadder)
         {
+            escaleraCollider = collision.GetComponent<BoxCollider2D>();
             rb.gravityScale = 4;
             onLadder = false;
             usingLadder = onLadder;
@@ -244,3 +283,10 @@ public class PersonajeOscar : MonoBehaviour
         }
     }
 }
+
+
+/*
+  
+ 
+ 
+ */

@@ -12,6 +12,8 @@ TagManager:
   - Palanca
   - Hacha
   - escogerArma
+  - escogeDroga
+  - escogeLuz
   layers:
   - Default
   - TransparentFX
