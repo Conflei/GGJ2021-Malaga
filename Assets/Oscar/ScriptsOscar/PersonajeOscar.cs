@@ -25,17 +25,18 @@ public class PersonajeOscar : MonoBehaviour
     public UnityEngine.UI.Image barraVerde;
     bool active; //para la pausa
 
-  /* public bool isClimbing;
-    public LayerMask whatIsLadder;
-    public float distance;
-    private float movY;
-  */
-  /*
+    /* public bool isClimbing;
+      public LayerMask whatIsLadder;
+      public float distance;
+      private float movY;
+    */
+    // Cosas escalera  desde linea 34 hasta la 39 y en el ontriggerstay/triggerexit.
+    public BoxCollider2D escaleraCollider;
     public bool onLadder = false;
     public float climbSpeed;
-    public float exitHop = 3f;
+    public float exitHop = 10f;
     public bool usingLadder = false;
-  */
+  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -64,9 +65,11 @@ public class PersonajeOscar : MonoBehaviour
         if (movX < 0) transform.localScale = new Vector3(-tamañoX, tamañoY, 1); //Cambiar escala a negativo al disminuir movimiento X
         if (movX > 0) transform.localScale = new Vector3(tamañoX, tamañoY, 1);
 
-        if ((Input.GetKeyDown(KeyCode.Space) && enSuelo))
+        if ((Input.GetKeyDown(KeyCode.Space) && enSuelo ))
         {
-            jump = true;
+           
+                jump = true;
+            
         }
         Pausa();
         Atacar();
@@ -183,7 +186,7 @@ public class PersonajeOscar : MonoBehaviour
         }
     }
 
-   /* private void OnTriggerStay2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
         if (col.tag == ("Escalera"))
         {
@@ -193,8 +196,9 @@ public class PersonajeOscar : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * climbSpeed);
                 rb.gravityScale = 0;
                 onLadder = true;
-                enSuelo = false;
+                //enSuelo = false;
                 usingLadder = onLadder;
+                escaleraCollider.enabled = false;
                 
             }else if(Input.GetAxisRaw("Vertical") ==0)
             {
@@ -211,10 +215,11 @@ public class PersonajeOscar : MonoBehaviour
             rb.gravityScale = 4;
             onLadder = false;
             usingLadder = onLadder;
+            escaleraCollider.enabled = true;
             if (!enSuelo)
             {
-                rb.velocity = new Vector2(rb.velocity.x, exitHop);
+               // rb.velocity = new Vector2(rb.velocity.x, exitHop);
             }
         }
-    }*/
+    }
 }
