@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ataque
   - Escalera
+  - Enemy
+  - Waypoint
+  - Extra
   layers:
   - Default
   - TransparentFX
