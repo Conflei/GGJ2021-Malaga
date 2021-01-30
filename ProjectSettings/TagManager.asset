@@ -9,6 +9,9 @@ TagManager:
   - Enemy
   - Waypoint
   - Extra
+  - Palanca
+  - Hacha
+  - escogerArma
   layers:
   - Default
   - TransparentFX

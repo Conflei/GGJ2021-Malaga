@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: eb3b115a205c3d843825e3bc3917a6de
+guid: 18faf7e3fbbe0d24896a7c68a99b6b8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4032198501556066094
-    second: Andar_0
+      213: 8364545860556462395
+    second: enemigo1_0
   - first:
-      213: -7672050745454935670
-    second: Andar_1
+      213: -1602824317754143418
+    second: enemigo1_1
   - first:
-      213: 5366333190148003599
-    second: Andar_2
+      213: 6247932144818032346
+    second: enemigo1_2
   - first:
-      213: 4314335195092104775
-    second: Andar_3
+      213: 8192425269832253221
+    second: enemigo1_3
   - first:
-      213: 7177970084462534804
-    second: Andar_4
+      213: -4096043982604785611
+    second: enemigo1_4
   - first:
-      213: 8884913658528022271
-    second: Andar_5
+      213: -6884751792072587911
+    second: enemigo1_5
+  - first:
+      213: 940133735137976442
+    second: enemigo1_6
+  - first:
+      213: 4100634296580017158
+    second: enemigo1_7
+  - first:
+      213: 1219886517359387517
+    second: enemigo1_8
+  - first:
+      213: 4623689680170677341
+    second: enemigo1_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -117,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Andar_0
+      name: enemigo1_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 249
-        width: 81
-        height: 169
+        x: 422
+        y: 1288
+        width: 586
+        height: 1547
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d863ea83d0ca08c0800000000000000
-      internalID: -4032198501556066094
+      spriteID: b399ee59426d41470800000000000000
+      internalID: 8364545860556462395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andar_1
+      name: enemigo1_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 249
-        width: 84
-        height: 169
+        x: 1224
+        y: 1305
+        width: 667
+        height: 1532
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81436ace76678590800000000000000
-      internalID: -7672050745454935670
+      spriteID: 64d08ee66cf91c9e0800000000000000
+      internalID: -1602824317754143418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andar_2
+      name: enemigo1_2
       rect:
         serializedVersion: 2
-        x: 203
-        y: 254
-        width: 74
-        height: 167
+        x: 2096
+        y: 1262
+        width: 593
+        height: 1573
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f071929ba9b097a40800000000000000
-      internalID: 5366333190148003599
+      spriteID: ade8f98ce2d15b650800000000000000
+      internalID: 6247932144818032346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andar_3
+      name: enemigo1_3
       rect:
         serializedVersion: 2
-        x: 286
-        y: 253
-        width: 65
-        height: 168
+        x: 3041
+        y: 1304
+        width: 679
+        height: 1530
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7463e6960099fdb30800000000000000
-      internalID: 4314335195092104775
+      spriteID: 52ff849a06751b170800000000000000
+      internalID: 8192425269832253221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andar_4
+      name: enemigo1_4
       rect:
         serializedVersion: 2
-        x: 367
-        y: 249
-        width: 95
-        height: 169
+        x: 3700
+        y: 2477
+        width: 25
+        height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49025c4e2c54d9360800000000000000
-      internalID: 7177970084462534804
+      spriteID: 538277813bde727c0800000000000000
+      internalID: -4096043982604785611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Andar_5
+      name: enemigo1_5
       rect:
         serializedVersion: 2
-        x: 464
-        y: 249
-        width: 81
-        height: 169
+        x: 3721
+        y: 2472
+        width: 10
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +248,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe349ce5ed8d4b70800000000000000
-      internalID: 8884913658528022271
+      spriteID: 97587cad8b27470a0800000000000000
+      internalID: -6884751792072587911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo1_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1390
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a24ca6a60c0d00800000000000000
+      internalID: 940133735137976442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo1_7
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1390
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c8f69aa2168e830800000000000000
+      internalID: 4100634296580017158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo1_8
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1392
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73ae750358ede010800000000000000
+      internalID: 1219886517359387517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo1_9
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 1390
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54763a4445aa2040800000000000000
+      internalID: 4623689680170677341
       vertices: []
       indices: 
       edges: []
@@ -245,7 +341,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bc295ae0f43d334684a48cf94d83ee4
+    spriteID: b021d6031de07f24cba6ebaa1b3c5146
     internalID: 0
     vertices: []
     indices: 

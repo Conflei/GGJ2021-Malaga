@@ -6,13 +6,19 @@ using UnityEngine.UI;
 public class PersonajeOscar : MonoBehaviour
 {
     //Movimiento: A y D      Salto: Espacio      Pausa: P     Ataque: L (?)
+
+    public bool tengoHacha = false;
+    public bool tengoPalanca = false;
+    public GameObject Hacha;
+    public GameObject Palanca;
     
     public CanvasController canvasController;
     public int hp = 3;
     public int maxHp = 3;
     public float tamañoX;
     public float tamañoY;
-    private BoxCollider2D attackCollider;
+    private BoxCollider2D attackColliderHacha;
+    private BoxCollider2D attackColliderPalanca;
     private Rigidbody2D rb;
     private Animator anim;
     public float speed = 6;
@@ -38,8 +44,12 @@ public class PersonajeOscar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        attackCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
-        attackCollider.enabled = false;
+        attackColliderHacha = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        Hacha.SetActive(false);
+        Palanca.SetActive(false);
+        attackColliderHacha.enabled = false;
+        attackColliderPalanca = transform.GetChild(3).GetComponent<BoxCollider2D>();
+        
         hp = maxHp;
 
     }
@@ -67,9 +77,18 @@ public class PersonajeOscar : MonoBehaviour
         }
         Pausa();
         Atacar();
+        /*
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            tengoHacha = true;
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            tengoPalanca = true;
+        }*/
 
-        
-    
+
+
     }
 
     private void FixedUpdate()
@@ -82,29 +101,17 @@ public class PersonajeOscar : MonoBehaviour
 
         }
 
-       /* RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
-
-        if (hitInfo.collider != null)
+        if (tengoHacha)
         {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                isClimbing = true;
-            }
+            Hacha.SetActive(true);
         }
-        else
+        if (tengoPalanca)
         {
-            isClimbing = false;
+            Palanca.SetActive(true);
         }
 
-            if (isClimbing)
-            {
-                movY = Input.GetAxis("Vertical");
-                rb.velocity = new Vector2(rb.position.x, movY * speed);
-                rb.gravityScale = 0;
-            }else
-            {
-                rb.gravityScale = 4;
-            }*/
+        
+       
 
 
         if (hp <= 0)
@@ -112,7 +119,14 @@ public class PersonajeOscar : MonoBehaviour
             anim.Play("Muerte");
         }
     }
-
+    public void CogerHacha()
+    {
+        tengoHacha = true;
+    }
+    public void CogerPalanca()
+    {
+        tengoPalanca = true;
+    }
     
     public void ActualizarVida()
     {
@@ -124,20 +138,46 @@ public class PersonajeOscar : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.L))
         {
-            if (attackCollider.enabled == false)
-            {
 
-                transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
-                anim.SetTrigger("Atacar");
-                attackCollider.enabled = true;
+            if (tengoHacha)
+            {
+                if (attackColliderHacha.enabled == false)
+                {
+                   // attackColliderHacha.enabled = true;
+                    transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
+                    anim.SetTrigger("Atacar");
+                }
             }
+
+            if (tengoPalanca)
+            {
+                if (attackColliderPalanca.enabled == false)
+                {
+                   // attackColliderPalanca.enabled = true;
+                    transform.position = transform.position + new Vector3(0.001f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
+                    anim.SetTrigger("Atacar");
+                }
+            }
+
+
+
+
+           
         }
     }
 
+    public void AtacarArma()
+    {
+        attackColliderHacha.enabled = true;
+        attackColliderPalanca.enabled = true;
+    }
     public void NOAtacar()
     {
-        attackCollider.enabled = false;
+        attackColliderHacha.enabled = false;
+        attackColliderPalanca.enabled = false;
     }
+
+   
 
     private void Pausa()
     {

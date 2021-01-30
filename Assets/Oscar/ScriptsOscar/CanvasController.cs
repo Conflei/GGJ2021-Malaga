@@ -9,6 +9,7 @@ public class CanvasController : MonoBehaviour
     public Image telaNegra;
     public Image barraVerde;
     float valorAlfaDeseadoTelaNegra;
+    public Canvas CanvasArma;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class CanvasController : MonoBehaviour
         telaNegra.color = new Color(0, 0, 0); //Color inicial fade.
         valorAlfaDeseadoTelaNegra = 0;
         canvasPausa.enabled = false;
+        CanvasArma.enabled = false;
     }
 
     // Update is called once per frame
@@ -38,5 +40,21 @@ public class CanvasController : MonoBehaviour
     public void iniciarFadeOut()
     {
         valorAlfaDeseadoTelaNegra = 1; //Se llama desde la animacion de muerte
+    }
+
+    public void CerrarMenuArma()
+    {
+        CanvasArma.enabled = false;
+        Time.timeScale = 1;
+       // Destroy(escogerArma);
+    }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.tag =="escogerArma")
+        {
+            CanvasArma.enabled = true;
+            Destroy(col.gameObject);
+            Time.timeScale = 0;
+        }
     }
 }
