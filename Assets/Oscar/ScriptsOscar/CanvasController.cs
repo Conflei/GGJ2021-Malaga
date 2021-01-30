@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
@@ -35,14 +36,20 @@ public class CanvasController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .03f); //
+        float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .1f); //
         telaNegra.color = new Color(0, 0, 0, valorAlfa);
 
         if (valorAlfa > 0.99f && valorAlfaDeseadoTelaNegra == 1)
         {
-            // SceneManager.LoadScene();
+            SceneManager.LoadScene(escenaActual()); // Para recargar el nivel actual.
+
         }
     }
+    int escenaActual()
+    {
+        return SceneManager.GetActiveScene().buildIndex;
+    }
+
 
     public void iniciarFadeOut()
     {

@@ -20,31 +20,31 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2033703128756169899, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 4312439592549950094, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.13333334
-      value: {fileID: -7280375600858426830, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: -4088804523733845173, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.26666668
-      value: {fileID: 6124726318920436461, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 3580083140019735719, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.4
-      value: {fileID: 2551004509262129675, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: -1805458258080565063, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.48333332
-      value: {fileID: 2931516149379172321, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 481693592928341236, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.56666666
-      value: {fileID: 2420950129998974964, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 9189806994662868086, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.6166667
-      value: {fileID: -4072078241611136378, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 831011496650001217, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.7
-      value: {fileID: -1269438193255683567, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 147585101832595010, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     - time: 0.8666667
-      value: {fileID: -1269438193255683567, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7,
+      value: {fileID: 147585101832595010, guid: 0c3bb604925d0b24b923dd2cc2269f23,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -65,15 +65,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2033703128756169899, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: -7280375600858426830, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: 6124726318920436461, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: 2551004509262129675, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: 2931516149379172321, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: 2420950129998974964, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: -4072078241611136378, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: -1269438193255683567, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
-    - {fileID: -1269438193255683567, guid: 05363e3a43cb9a94d96e8b9d5c3a79f7, type: 3}
+    - {fileID: 4312439592549950094, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: -4088804523733845173, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 3580083140019735719, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: -1805458258080565063, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 481693592928341236, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 9189806994662868086, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 831011496650001217, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 147585101832595010, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
+    - {fileID: 147585101832595010, guid: 0c3bb604925d0b24b923dd2cc2269f23, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -106,15 +106,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.48333332
-    functionName: CongelaMovimiento
+  - time: 0.46666667
+    functionName: AtacarArma
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.51666665
-    functionName: AtacarArma
+  - time: 0.48333332
+    functionName: CongelaMovimiento
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -127,7 +127,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.85
+  - time: 0.8666667
     functionName: PuedeAtacar
     data: 
     objectReferenceParameter: {fileID: 0}

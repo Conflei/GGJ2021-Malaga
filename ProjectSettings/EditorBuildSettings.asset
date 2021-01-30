@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: a0ab469167c5a4e59b5410701225c14b
+  - enabled: 1
+    path: Assets/Oscar/ScenesOsc/PruebaEscalera.unity
+    guid: d61ea5b7bc275f945a82224c6e1a2317
   m_configObjects: {}
