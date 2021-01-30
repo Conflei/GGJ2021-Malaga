@@ -5,7 +5,7 @@ public class Awesome2DCamera : MonoBehaviour
 {
 
     // the target the camera should follow (usually the player)
-    public Transform target;
+    public Transform target { set; get; }
 
     // the camera distance (z position)
     public float distance = -10f;
@@ -34,6 +34,8 @@ public class Awesome2DCamera : MonoBehaviour
         // the desired max boundaries
         maxX = mapX;
         maxY = mapY;
+
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     void Update()
