@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PersonajeOscar : MonoBehaviour
 {
     //Movimiento: A y D      Salto: Espacio      Pausa: P     Ataque: L (?)
-
+    public int estoyEscalera = 0;
     public Canvas canvasPausa;
     public int hp = 3;
     public int maxHp = 3;
@@ -41,12 +41,15 @@ public class PersonajeOscar : MonoBehaviour
     
     void Update()
     {
-        enSuelo = Physics2D.OverlapCircle(refPlayer.position, 1f, 1 << 8); //Definicion suelo
+        enSuelo = Physics2D.OverlapCircle(refPlayer.position, 0.3f, 1 << 8); //Definicion suelo
         anim.SetBool("enSuelo", enSuelo); //Animator suelo
+       
         float movX;
+        
         movX = Input.GetAxis("Horizontal"); //Eje horizontal
         anim.SetFloat("absMovX", Mathf.Abs(movX)); //Animacion movimiento en funcion valor movX
         rb.velocity = new Vector2(movX  * speed, rb.velocity.y); //
+      
         if (movX < 0) transform.localScale = new Vector3(-tamañoX, tamañoY, 1); //Cambiar escala a negativo al disminuir movimiento X
         if (movX > 0) transform.localScale = new Vector3(tamañoX, tamañoY, 1);
 
@@ -66,6 +69,7 @@ public class PersonajeOscar : MonoBehaviour
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             jump = false;
         }
+        
 
         float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .03f); //
         telaNegra.color = new Color(0, 0, 0, valorAlfa);
