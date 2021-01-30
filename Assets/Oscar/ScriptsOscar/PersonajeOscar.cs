@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PersonajeOscar : MonoBehaviour
 {
     //Movimiento: A y D      Salto: Espacio      Pausa: P     Ataque: L (?)
-    public int estoyEscalera = 0;
+    
     public Canvas canvasPausa;
     public int hp = 3;
     public int maxHp = 3;
@@ -25,6 +25,17 @@ public class PersonajeOscar : MonoBehaviour
     public UnityEngine.UI.Image barraVerde;
     bool active; //para la pausa
 
+  /* public bool isClimbing;
+    public LayerMask whatIsLadder;
+    public float distance;
+    private float movY;
+  */
+  /*
+    public bool onLadder = false;
+    public float climbSpeed;
+    public float exitHop = 3f;
+    public bool usingLadder = false;
+  */
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -59,6 +70,9 @@ public class PersonajeOscar : MonoBehaviour
         }
         Pausa();
         Atacar();
+
+        
+    
     }
 
     private void FixedUpdate()
@@ -68,7 +82,34 @@ public class PersonajeOscar : MonoBehaviour
 
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             jump = false;
+
         }
+
+       /* RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsLadder);
+
+        if (hitInfo.collider != null)
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                isClimbing = true;
+            }
+        }
+        else
+        {
+            isClimbing = false;
+        }
+
+            if (isClimbing)
+            {
+                movY = Input.GetAxis("Vertical");
+                rb.velocity = new Vector2(rb.position.x, movY * speed);
+                rb.gravityScale = 0;
+            }else
+            {
+                rb.gravityScale = 4;
+            }*/
+            
+        
         
 
         float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .03f); //
@@ -141,4 +182,39 @@ public class PersonajeOscar : MonoBehaviour
             anim.SetTrigger("Dañado");
         }
     }
+
+   /* private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.tag == ("Escalera"))
+        {
+            if (Input.GetAxisRaw("Vertical") !=0)
+            {
+               
+                rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * climbSpeed);
+                rb.gravityScale = 0;
+                onLadder = true;
+                enSuelo = false;
+                usingLadder = onLadder;
+                
+            }else if(Input.GetAxisRaw("Vertical") ==0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+                
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == ("Escalera") &&onLadder)
+        {
+            rb.gravityScale = 4;
+            onLadder = false;
+            usingLadder = onLadder;
+            if (!enSuelo)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, exitHop);
+            }
+        }
+    }*/
 }
