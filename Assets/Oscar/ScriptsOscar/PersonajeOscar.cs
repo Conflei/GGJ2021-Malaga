@@ -58,11 +58,11 @@ public class PersonajeOscar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        attackColliderHacha = Hacha.GetComponent<BoxCollider2D>();
+        //attackColliderHacha = Hacha.GetComponent<BoxCollider2D>();
         Hacha.SetActive(false);
         
-        attackColliderHacha.enabled = false;
-        attackColliderPalanca = Palanca.GetComponent<BoxCollider2D>();
+       // attackColliderHacha.enabled = false;
+       // attackColliderPalanca = Palanca.GetComponent<BoxCollider2D>();
         Palanca.SetActive(false);
         LamparaLuz.SetActive(false);
         LinternaLuz.SetActive(false);
@@ -189,13 +189,13 @@ public class PersonajeOscar : MonoBehaviour
 
     public void AtacarArma()
     {
-        attackColliderHacha.enabled = true;
-        attackColliderPalanca.enabled = true;
+        //attackColliderHacha.enabled = true;
+        //attackColliderPalanca.enabled = true;
     }
     public void NOAtacarArma()
     {
-        attackColliderHacha.enabled = false;
-        attackColliderPalanca.enabled = false;
+        //attackColliderHacha.enabled = false;
+        //attackColliderPalanca.enabled = false;
     }
     public void PuedeAtacar()
     {
