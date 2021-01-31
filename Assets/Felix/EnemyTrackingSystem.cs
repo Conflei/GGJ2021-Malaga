@@ -46,6 +46,7 @@ public class EnemyTrackingSystem : MonoBehaviour
     {
         while (visitingNodes.Count >= 1)
         {
+            print(enemy.gameObject.name);
             iTween.MoveTo(enemy.gameObject, iTween.Hash("position", visitingNodes[0].transform.position, "time", CalculateTime(enemy.transform, visitingNodes[0].transform), "easeType", iTween.EaseType.linear));
             yield return new WaitForSeconds(2f);
 
