@@ -4819,29 +4819,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 676053523810406099, guid: 42f6993b4df5b4e028bacc00e69e6879,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2414057184991839723, guid: 42f6993b4df5b4e028bacc00e69e6879,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168973279667403593, guid: 42f6993b4df5b4e028bacc00e69e6879,
+    - target: {fileID: 7051322801106222885, guid: 42f6993b4df5b4e028bacc00e69e6879,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7168973279667403599, guid: 42f6993b4df5b4e028bacc00e69e6879,
+    - target: {fileID: 7168973280703724417, guid: 42f6993b4df5b4e028bacc00e69e6879,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168973280703724417, guid: 42f6993b4df5b4e028bacc00e69e6879,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7168973281595977524, guid: 42f6993b4df5b4e028bacc00e69e6879,
+    - target: {fileID: 7168973280703724417, guid: 42f6993b4df5b4e028bacc00e69e6879,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168973280703724417, guid: 42f6993b4df5b4e028bacc00e69e6879,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7744054153804187617, guid: 42f6993b4df5b4e028bacc00e69e6879,
@@ -4903,21 +4903,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744054154958901816, guid: 42f6993b4df5b4e028bacc00e69e6879,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744054154958901818, guid: 42f6993b4df5b4e028bacc00e69e6879,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8320106846969292438, guid: 42f6993b4df5b4e028bacc00e69e6879,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f6993b4df5b4e028bacc00e69e6879, type: 3}
