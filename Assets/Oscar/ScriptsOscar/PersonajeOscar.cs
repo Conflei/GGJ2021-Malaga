@@ -23,6 +23,7 @@ public class PersonajeOscar : MonoBehaviour
 
 
     public bool PuedesAtacar;// bool para intentar q no se repita la animacion de ataque al presionar repetidamente la tecla.
+    public bool hasKey = false;
 
     private int congelar = 1; //Congela el movimiento desde el animation poniendo su valor a 0 en rb.velocity
     public CanvasController canvasController;

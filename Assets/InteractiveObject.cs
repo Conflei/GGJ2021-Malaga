@@ -27,19 +27,21 @@ public class InteractiveObject : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            switch (this.tag)
+            switch (this.gameObject.name)
             {
-                case "escogeLuz":
+                case "BoxLight":
                     myType = ObjectType.Light;
                     break;
-                case "escogeArma":
+                case "BoxWeapon":
                     myType = ObjectType.Weapon;
                     break;
-                case "escogeDroga":
-                    myType = ObjectType.Weapon;
+                case "BoxDrug":
+                    myType = ObjectType.Drug;
                     break;
-                case "key":
+                case "Key":
                     myType = ObjectType.Key;
+                    break;
+                case "LockedDoor":
                     break;
             }
 

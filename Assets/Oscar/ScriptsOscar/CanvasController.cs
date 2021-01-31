@@ -76,6 +76,7 @@ public class CanvasController : MonoBehaviour
 
     public void ObjectAcquired(ObjectType type)
     {
+        print("object acquired " + type);
         switch (type)
         {
             case ObjectType.Light:
@@ -84,7 +85,6 @@ public class CanvasController : MonoBehaviour
                 break;
             case ObjectType.Weapon:
                 CanvasArma.SetActive(true);
-                CanvasArma.gameObject.SetActive(true);
                 break;
             case ObjectType.Drug:
                 CanvasDroga.SetActive(true);
