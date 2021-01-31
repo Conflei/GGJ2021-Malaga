@@ -363,10 +363,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_0
       rect:
         serializedVersion: 2
-        x: 1727
-        y: 7387
-        width: 381
-        height: 753
+        x: 2386
+        y: 6294
+        width: 260
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,10 +384,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_1
       rect:
         serializedVersion: 2
-        x: 2181
-        y: 7375
-        width: 380
-        height: 765
+        x: 2694
+        y: 6286
+        width: 260
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,10 +405,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_2
       rect:
         serializedVersion: 2
-        x: 2594
-        y: 7387
-        width: 344
-        height: 769
+        x: 2974
+        y: 6294
+        width: 236
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_3
       rect:
         serializedVersion: 2
-        x: 2971
-        y: 7379
-        width: 15
-        height: 15
+        x: 3230
+        y: 6290
+        width: 12
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,10 +447,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_4
       rect:
         serializedVersion: 2
-        x: 2987
-        y: 7387
-        width: 287
-        height: 765
+        x: 3242
+        y: 6294
+        width: 196
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,10 +468,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_5
       rect:
         serializedVersion: 2
-        x: 3344
-        y: 7379
-        width: 14
-        height: 15
+        x: 3483
+        y: 6290
+        width: 11
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,10 +489,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_6
       rect:
         serializedVersion: 2
-        x: 3428
-        y: 7391
-        width: 287
-        height: 765
+        x: 3542
+        y: 6298
+        width: 196
+        height: 516
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,10 +510,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_7
       rect:
         serializedVersion: 2
-        x: 3906
-        y: 7388
-        width: 360
-        height: 768
+        x: 3866
+        y: 6294
+        width: 244
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,10 +531,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_8
       rect:
         serializedVersion: 2
-        x: 4250
-        y: 7380
-        width: 15
-        height: 15
+        x: 4098
+        y: 6290
+        width: 12
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,10 +552,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_9
       rect:
         serializedVersion: 2
-        x: 4323
-        y: 7367
-        width: 356
-        height: 765
+        x: 4150
+        y: 6278
+        width: 240
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,10 +573,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_10
       rect:
         serializedVersion: 2
-        x: 4691
-        y: 7379
-        width: 381
-        height: 753
+        x: 4398
+        y: 6290
+        width: 256
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_11
       rect:
         serializedVersion: 2
-        x: 2092
-        y: 7367
-        width: 14
-        height: 12
+        x: 2634
+        y: 6279
+        width: 12
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +615,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_12
       rect:
         serializedVersion: 2
-        x: 2551
-        y: 7367
-        width: 18
-        height: 24
+        x: 2946
+        y: 6279
+        width: 14
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,8 +636,8 @@ TextureImporter:
       name: Sprites GeneralescANVAS_13
       rect:
         serializedVersion: 2
-        x: 4671
-        y: 7359
+        x: 4382
+        y: 6274
         width: 12
         height: 12
       alignment: 7
@@ -657,9 +657,9 @@ TextureImporter:
       name: Sprites GeneralescANVAS_14
       rect:
         serializedVersion: 2
-        x: 5056
-        y: 7359
-        width: 15
+        x: 4646
+        y: 6274
+        width: 11
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -678,10 +678,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_15
       rect:
         serializedVersion: 2
-        x: 1776
-        y: 6282
-        width: 380
-        height: 765
+        x: 2418
+        y: 5546
+        width: 260
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,10 +699,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_16
       rect:
         serializedVersion: 2
-        x: 2347
-        y: 6290
-        width: 279
-        height: 753
+        x: 2670
+        y: 5538
+        width: 16
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,10 +720,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_17
       rect:
         serializedVersion: 2
-        x: 2873
-        y: 6290
-        width: 255
-        height: 768
+        x: 2806
+        y: 5550
+        width: 192
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,10 +741,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_18
       rect:
         serializedVersion: 2
-        x: 3424
-        y: 6290
-        width: 247
-        height: 838
+        x: 3031
+        y: 5538
+        width: 15
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,10 +762,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_19
       rect:
         serializedVersion: 2
-        x: 3677
-        y: 6960
-        width: 4
-        height: 8
+        x: 3162
+        y: 5550
+        width: 176
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,10 +783,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_20
       rect:
         serializedVersion: 2
-        x: 3930
-        y: 6290
-        width: 389
-        height: 753
+        x: 3371
+        y: 5538
+        width: 15
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_21
       rect:
         serializedVersion: 2
-        x: 4473
-        y: 6290
-        width: 259
-        height: 806
+        x: 3538
+        y: 5550
+        width: 168
+        height: 568
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -825,10 +825,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_22
       rect:
         serializedVersion: 2
-        x: 5048
-        y: 6290
-        width: 247
-        height: 834
+        x: 3718
+        y: 5538
+        width: 16
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,10 +846,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_23
       rect:
         serializedVersion: 2
-        x: 5301
-        y: 6960
-        width: 8
-        height: 8
+        x: 3882
+        y: 5550
+        width: 266
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,10 +867,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_24
       rect:
         serializedVersion: 2
-        x: 5574
-        y: 6290
-        width: 287
-        height: 838
+        x: 4063
+        y: 5538
+        width: 15
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,10 +888,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_25
       rect:
         serializedVersion: 2
-        x: 6008
-        y: 6290
-        width: 433
-        height: 777
+        x: 4250
+        y: 5550
+        width: 176
+        height: 548
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -909,10 +909,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_26
       rect:
         serializedVersion: 2
-        x: 2145
-        y: 6274
-        width: 19
-        height: 24
+        x: 4430
+        y: 5538
+        width: 16
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -930,10 +930,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_27
       rect:
         serializedVersion: 2
-        x: 2679
-        y: 6274
-        width: 16
-        height: 24
+        x: 4642
+        y: 5550
+        width: 168
+        height: 568
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,10 +951,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_28
       rect:
         serializedVersion: 2
-        x: 3181
-        y: 6274
-        width: 16
-        height: 24
+        x: 4822
+        y: 5538
+        width: 14
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,10 +972,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_29
       rect:
         serializedVersion: 2
-        x: 3691
-        y: 6274
-        width: 18
-        height: 24
+        x: 4998
+        y: 5550
+        width: 192
+        height: 568
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -993,10 +993,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_30
       rect:
         serializedVersion: 2
-        x: 4199
-        y: 6272
-        width: 18
-        height: 26
+        x: 5223
+        y: 5538
+        width: 15
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,10 +1014,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_31
       rect:
         serializedVersion: 2
-        x: 4740
-        y: 6274
-        width: 19
-        height: 24
+        x: 5290
+        y: 5550
+        width: 296
+        height: 528
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1035,10 +1035,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_32
       rect:
         serializedVersion: 2
-        x: 5316
-        y: 6272
-        width: 19
-        height: 26
+        x: 5618
+        y: 5538
+        width: 15
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,10 +1056,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_33
       rect:
         serializedVersion: 2
-        x: 5910
-        y: 6286
-        width: 12
-        height: 12
+        x: 2386
+        y: 4850
+        width: 252
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,10 +1077,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_34
       rect:
         serializedVersion: 2
-        x: 6491
-        y: 6274
-        width: 18
-        height: 24
+        x: 2814
+        y: 4854
+        width: 176
+        height: 472
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,10 +1098,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_35
       rect:
         serializedVersion: 2
-        x: 5915
-        y: 6272
-        width: 15
-        height: 13
+        x: 3092
+        y: 5136
+        width: 4
+        height: 4
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1119,10 +1119,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_36
       rect:
         serializedVersion: 2
-        x: 1727
-        y: 5257
-        width: 369
-        height: 765
+        x: 3098
+        y: 4846
+        width: 212
+        height: 352
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1140,10 +1140,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_37
       rect:
         serializedVersion: 2
-        x: 2357
-        y: 5915
-        width: 8
-        height: 4
+        x: 3514
+        y: 4850
+        width: 176
+        height: 472
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1161,10 +1161,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_38
       rect:
         serializedVersion: 2
-        x: 2359
-        y: 5262
-        width: 255
-        height: 696
+        x: 3846
+        y: 4850
+        width: 252
+        height: 520
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1182,10 +1182,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_39
       rect:
         serializedVersion: 2
-        x: 3391
-        y: 5257
-        width: 259
-        height: 697
+        x: 4326
+        y: 4854
+        width: 168
+        height: 532
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,10 +1203,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_40
       rect:
         serializedVersion: 2
-        x: 3881
-        y: 5257
-        width: 369
-        height: 765
+        x: 4778
+        y: 4854
+        width: 188
+        height: 532
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1224,10 +1224,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_41
       rect:
         serializedVersion: 2
-        x: 4583
-        y: 5262
-        width: 250
-        height: 784
+        x: 5222
+        y: 4858
+        width: 168
+        height: 532
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,10 +1245,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_42
       rect:
         serializedVersion: 2
-        x: 5252
-        y: 5266
-        width: 273
-        height: 783
+        x: 5514
+        y: 4854
+        width: 188
+        height: 532
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,10 +1266,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_43
       rect:
         serializedVersion: 2
-        x: 5906
-        y: 5270
-        width: 247
-        height: 781
+        x: 2458
+        y: 3590
+        width: 248
+        height: 820
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1287,10 +1287,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_44
       rect:
         serializedVersion: 2
-        x: 6339
-        y: 5266
-        width: 276
-        height: 781
+        x: 2831
+        y: 3594
+        width: 524
+        height: 820
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1308,10 +1308,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_45
       rect:
         serializedVersion: 2
-        x: 2770
-        y: 5677
-        width: 4
-        height: 7
+        x: 3478
+        y: 3595
+        width: 928
+        height: 819
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1329,10 +1329,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_46
       rect:
         serializedVersion: 2
-        x: 2776
-        y: 5253
-        width: 312
-        height: 515
+        x: 4481
+        y: 3590
+        width: 511
+        height: 820
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1350,10 +1350,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_47
       rect:
         serializedVersion: 2
-        x: 1833
-        y: 3399
-        width: 364
-        height: 1206
+        x: 5210
+        y: 4282
+        width: 272
+        height: 164
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1371,10 +1371,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_48
       rect:
         serializedVersion: 2
-        x: 2389
-        y: 3407
-        width: 753
-        height: 1206
+        x: 5238
+        y: 4032
+        width: 228
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1392,10 +1392,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_49
       rect:
         serializedVersion: 2
-        x: 3335
-        y: 3406
-        width: 1366
-        height: 1208
+        x: 5466
+        y: 4050
+        width: 19
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1410,34 +1410,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_50
-      rect:
-        serializedVersion: 2
-        x: 4822
-        y: 3399
-        width: 729
-        height: 1206
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcfaa0988520768e0800000000000000
-      internalID: -1700387755029516339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sprites GeneralescANVAS_51
       rect:
         serializedVersion: 2
-        x: 5890
-        y: 4420
-        width: 404
-        height: 240
+        x: 5310
+        y: 3702
+        width: 151
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1455,8 +1434,8 @@ TextureImporter:
       name: Sprites GeneralescANVAS_52
       rect:
         serializedVersion: 2
-        x: 5920
-        y: 4243
+        x: 5268
+        y: 3816
         width: 8
         height: 4
       alignment: 7
@@ -1473,97 +1452,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_53
-      rect:
-        serializedVersion: 2
-        x: 5934
-        y: 4048
-        width: 336
-        height: 215
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa3c16f4112e403f0800000000000000
-      internalID: -935374258612091990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_54
-      rect:
-        serializedVersion: 2
-        x: 6267
-        y: 4077
-        width: 27
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0959921ecb67caa0800000000000000
-      internalID: -6140821034076907251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_55
-      rect:
-        serializedVersion: 2
-        x: 5920
-        y: 3826
-        width: 4
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 990cc73d28898a340800000000000000
-      internalID: 4875314284289900697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_56
-      rect:
-        serializedVersion: 2
-        x: 6038
-        y: 3562
-        width: 218
-        height: 310
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45770a1f316bbe80800000000000000
-      internalID: -8161822976031361718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sprites GeneralescANVAS_57
       rect:
         serializedVersion: 2
-        x: 6029
-        y: 3776
-        width: 22
-        height: 34
+        x: 3381
+        y: 2350
+        width: 561
+        height: 960
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1581,10 +1476,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_58
       rect:
         serializedVersion: 2
-        x: 5976
-        y: 3732
-        width: 9
-        height: 6
+        x: 4098
+        y: 2350
+        width: 644
+        height: 952
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1599,118 +1494,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_66
-      rect:
-        serializedVersion: 2
-        x: 4251
-        y: 1573
-        width: 951
-        height: 1397
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63e3dcf3a07f730a0800000000000000
-      internalID: -6901776280529846730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_68
-      rect:
-        serializedVersion: 2
-        x: 2726
-        y: 2885
-        width: 29
-        height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b71ad6360f3af170800000000000000
-      internalID: 8212946166386137012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_76
-      rect:
-        serializedVersion: 2
-        x: 5607
-        y: 2881
-        width: 15
-        height: 11
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c425ca18abf91b20800000000000000
-      internalID: 3105790117470872771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_85
-      rect:
-        serializedVersion: 2
-        x: 2396
-        y: 1573
-        width: 687
-        height: 1323
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f8b78882e344ad20800000000000000
-      internalID: 3288828268119570678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_88
-      rect:
-        serializedVersion: 2
-        x: 5316
-        y: 1573
-        width: 691
-        height: 1338
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87d4802af38a382a0800000000000000
-      internalID: -6736355626361270920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sprites GeneralescANVAS_89
       rect:
         serializedVersion: 2
-        x: 5616
-        y: 2793
-        width: 6
-        height: 10
+        x: 5146
+        y: 2946
+        width: 76
+        height: 100
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1728,10 +1518,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_91
       rect:
         serializedVersion: 2
-        x: 1833
-        y: 1573
-        width: 364
-        height: 1205
+        x: 2854
+        y: 2914
+        width: 24
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1749,10 +1539,10 @@ TextureImporter:
       name: Sprites GeneralescANVAS_103
       rect:
         serializedVersion: 2
-        x: 6254
-        y: 1573
-        width: 361
-        height: 1205
+        x: 3570
+        y: 1382
+        width: 276
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1767,13 +1557,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_116
+      name: Sprites GeneralescANVAS_59
       rect:
         serializedVersion: 2
-        x: 5907
-        y: 2643
-        width: 11
-        height: 13
+        x: 4279
+        y: 3299
+        width: 6
+        height: 6
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1781,19 +1571,250 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a818a90c51d13fa0800000000000000
-      internalID: -5822642649984132953
+      spriteID: 98242012620ad69d0800000000000000
+      internalID: -2779389309394730359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_118
+      name: Sprites GeneralescANVAS_60
       rect:
         serializedVersion: 2
-        x: 2908
-        y: 2607
-        width: 8
+        x: 4288
+        y: 3300
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b383576540317f4f0800000000000000
+      internalID: -795145899856283589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_61
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 3243
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfcedf8ecc076eb0800000000000000
+      internalID: -4726795202585505843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_62
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 3250
+        width: 35
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3febed5c0c0b6c5a0800000000000000
+      internalID: -6501314670062813453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_64
+      rect:
+        serializedVersion: 2
+        x: 5047
+        y: 3243
+        width: 18
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00b4d055aaddcc60800000000000000
+      internalID: 7840162929882476554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_67
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3239
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570c449d08ee42b70800000000000000
+      internalID: 8873479402995105909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_69
+      rect:
+        serializedVersion: 2
+        x: 5019
+        y: 3239
+        width: 13
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2235503228f388fd0800000000000000
+      internalID: -2339550178253122782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_70
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 2350
+        width: 453
+        height: 892
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84628ab7ec6ea8180800000000000000
+      internalID: -9112217121518508472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_74
+      rect:
+        serializedVersion: 2
+        x: 4840
+        y: 2350
+        width: 449
+        height: 897
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8834f7ccb413cc0800000000000000
+      internalID: -3733119274432886620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_75
+      rect:
+        serializedVersion: 2
+        x: 5046
+        y: 3175
+        width: 75
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40254e6073610a60800000000000000
+      internalID: 7638495777534582859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_77
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 2350
+        width: 248
+        height: 820
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5851d9d51586f3a0800000000000000
+      internalID: -6631967072361293729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_78
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 3054
+        width: 16
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44153c44e98ed1000800000000000000
+      internalID: 8418540780736836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_80
+      rect:
+        serializedVersion: 2
+        x: 4832
+        y: 3084
+        width: 4
         height: 4
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1802,18 +1823,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90ed794f04ae81fa0800000000000000
-      internalID: -5829652152928707063
+      spriteID: 8641475ebe0d14a80800000000000000
+      internalID: -8484270511403821976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_128
+      name: Sprites GeneralescANVAS_82
       rect:
         serializedVersion: 2
-        x: 6036
-        y: 2529
+        x: 5190
+        y: 3054
+        width: 12
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de077f145e66cb0800000000000000
+      internalID: -4870953875467604613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_84
+      rect:
+        serializedVersion: 2
+        x: 5455
+        y: 2350
+        width: 251
+        height: 820
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3fe1cd923a8ded0800000000000000
+      internalID: -2388980202138045451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_87
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 2998
         width: 12
         height: 12
       alignment: 7
@@ -1823,19 +1886,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ee1e9e303665c2a0800000000000000
-      internalID: -6717850911758213400
+      spriteID: c5e8c80501fb31a50800000000000000
+      internalID: 6490741564762787420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_140
+      name: Sprites GeneralescANVAS_90
       rect:
         serializedVersion: 2
-        x: 5421
-        y: 2411
-        width: 26
+        x: 5308
+        y: 2998
+        width: 13
         height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1844,20 +1907,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35506ca46addfbf40800000000000000
-      internalID: 5746555355836843347
+      spriteID: 8f35fd65432f43c90800000000000000
+      internalID: -7190856398394141704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_147
+      name: Sprites GeneralescANVAS_94
       rect:
         serializedVersion: 2
-        x: 1917
-        y: 136
-        width: 405
-        height: 1194
+        x: 4891
+        y: 2919
+        width: 18
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1865,20 +1928,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9757e7bc0868d4af0800000000000000
-      internalID: -410524103292848775
+      spriteID: 2ee9493691ea887b0800000000000000
+      internalID: -5221732343867990302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_148
+      name: Sprites GeneralescANVAS_98
       rect:
         serializedVersion: 2
-        x: 2407
-        y: 164
-        width: 396
-        height: 1133
+        x: 4879
+        y: 2863
+        width: 38
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1886,20 +1949,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbecd9d09db7f45f0800000000000000
-      internalID: -770260839090499909
+      spriteID: 1d9a7d8e741c4f970800000000000000
+      internalID: 8787861287499966929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_149
+      name: Sprites GeneralescANVAS_99
       rect:
         serializedVersion: 2
-        x: 2938
-        y: 192
-        width: 415
-        height: 1118
+        x: 2518
+        y: 1378
+        width: 272
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1907,20 +1970,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebf7bd7263d135090800000000000000
-      internalID: -8047055990746808386
+      spriteID: 3e9268361d48ec240800000000000000
+      internalID: 4813931086558407139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_150
+      name: Sprites GeneralescANVAS_100
       rect:
         serializedVersion: 2
-        x: 3364
-        y: 1113
-        width: 9
-        height: 17
+        x: 2846
+        y: 1398
+        width: 272
+        height: 768
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1928,20 +1991,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3748443ff1617d840800000000000000
-      internalID: 5248688217204753523
+      spriteID: 689b02a1fca293980800000000000000
+      internalID: -8558762547855967866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_151
+      name: Sprites GeneralescANVAS_101
       rect:
         serializedVersion: 2
-        x: 3472
-        y: 140
-        width: 401
-        height: 1194
+        x: 3206
+        y: 1414
+        width: 284
+        height: 760
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1949,20 +2012,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f5b5458f576ff160800000000000000
-      internalID: 7061476400695719415
+      spriteID: 5a5608cb09e9524f0800000000000000
+      internalID: -854102209841830491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_152
+      name: Sprites GeneralescANVAS_102
       rect:
         serializedVersion: 2
-        x: 4335
-        y: 196
-        width: 433
-        height: 1136
+        x: 3496
+        y: 2040
+        width: 8
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1970,20 +2033,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5086d2a1017aab9f0800000000000000
-      internalID: -451865124996814843
+      spriteID: 8d25804a79f1ca1d0800000000000000
+      internalID: -3338258487635848488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_153
+      name: Sprites GeneralescANVAS_104
       rect:
         serializedVersion: 2
-        x: 4920
-        y: 209
-        width: 496
-        height: 1125
+        x: 4154
+        y: 1414
+        width: 296
+        height: 776
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1991,20 +2054,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d292da7f3c3327200800000000000000
-      internalID: 176260252187830573
+      spriteID: e783c3c683b059540800000000000000
+      internalID: 5013926097108875390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_154
+      name: Sprites GeneralescANVAS_105
       rect:
         serializedVersion: 2
-        x: 5559
-        y: 176
-        width: 440
-        height: 1157
+        x: 4550
+        y: 1426
+        width: 340
+        height: 764
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2012,20 +2075,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3851625485ecb6e0800000000000000
-      internalID: -1820327792883967937
+      spriteID: 1c0909e187c4b9080800000000000000
+      internalID: -9179659336672046911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_155
+      name: Sprites GeneralescANVAS_106
       rect:
         serializedVersion: 2
-        x: 6251
-        y: 205
-        width: 513
-        height: 1127
+        x: 4986
+        y: 1402
+        width: 300
+        height: 788
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2033,20 +2096,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e24784bfbdbef1fb0800000000000000
-      internalID: -4674758558141090770
+      spriteID: 77516ddf62c2ae140800000000000000
+      internalID: 4749657302994654583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_156
+      name: Sprites GeneralescANVAS_107
       rect:
         serializedVersion: 2
-        x: 1731
-        y: 763
-        width: 24
-        height: 24
+        x: 5454
+        y: 1426
+        width: 352
+        height: 760
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2054,20 +2117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55f97de36fbdc7b0800000000000000
-      internalID: -5202291558636194465
+      spriteID: c3bef9fb34d02bf20800000000000000
+      internalID: 3436824050266008380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_157
+      name: Sprites GeneralescANVAS_108
       rect:
         serializedVersion: 2
-        x: 4246
-        y: 269
-        width: 15
-        height: 16
+        x: 2390
+        y: 1802
+        width: 16
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2075,20 +2138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7da0c34986a157f40800000000000000
-      internalID: 5725511537737337559
+      spriteID: 5c2c2ef12662421c0800000000000000
+      internalID: -4529453122344271163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_158
+      name: Sprites GeneralescANVAS_109
       rect:
         serializedVersion: 2
-        x: 4874
-        y: 269
-        width: 15
-        height: 16
+        x: 4094
+        y: 1466
+        width: 12
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2096,19 +2159,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc087fa047bd5ca0800000000000000
-      internalID: -6026459237902185267
+      spriteID: 5bceac042eb9d8080800000000000000
+      internalID: -9183512669086618443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_159
+      name: Sprites GeneralescANVAS_110
       rect:
         serializedVersion: 2
-        x: 5457
-        y: 270
-        width: 15
+        x: 4520
+        y: 1466
+        width: 13
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fd55337f739abc0800000000000000
+      internalID: -3771421678088364278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites GeneralescANVAS_111
+      rect:
+        serializedVersion: 2
+        x: 4915
+        y: 1466
+        width: 14
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2117,20 +2201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21bb79058c1e2c2b0800000000000000
-      internalID: -5565637939014681838
+      spriteID: 67b9905f8c5353f30800000000000000
+      internalID: 4554605735375903606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites GeneralescANVAS_160
+      name: Sprites GeneralescANVAS_112
       rect:
         serializedVersion: 2
-        x: 6101
-        y: 269
-        width: 15
-        height: 16
+        x: 5354
+        y: 1466
+        width: 11
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2138,50 +2222,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 005aefbdc015d36e0800000000000000
-      internalID: -1856238355734420224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_161
-      rect:
-        serializedVersion: 2
-        x: 8185
-        y: 3488
-        width: 7
-        height: 420
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a18dd3d2c4ac85240800000000000000
-      internalID: 4780793432979134490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites GeneralescANVAS_63
-      rect:
-        serializedVersion: 2
-        x: 3194
-        y: 1578
-        width: 831
-        height: 1396
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60cfa9bccc9536950800000000000000
-      internalID: 6441090628194073606
+      spriteID: a50fc34d72a0b8e20800000000000000
+      internalID: 3353785513688232026
       vertices: []
       indices: 
       edges: []
