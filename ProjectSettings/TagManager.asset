@@ -15,6 +15,7 @@ TagManager:
   - escogeDroga
   - escogeLuz
   - key
+  - Boss
   layers:
   - Default
   - TransparentFX

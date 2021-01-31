@@ -7,6 +7,7 @@ public class PersonajeOscar : MonoBehaviour
 {
     //Movimiento: A y D      Salto: Espacio      Pausa: P     Ataque: L (?)
 
+
     public bool tengoHacha = false;
     public bool tengoPalanca = false;
     public GameObject Hacha;
@@ -19,6 +20,9 @@ public class PersonajeOscar : MonoBehaviour
     public bool TengoLinterna = false;
 
     public GameObject AbalorioSalto;
+    public AudioSource AudioMuerte;
+    public AudioSource sonidoSalto;
+    public AudioSource AudioAtaque;
 
 
 
@@ -79,7 +83,10 @@ public class PersonajeOscar : MonoBehaviour
         if (hp >= 1)
         {
             enSuelo = Physics2D.OverlapCircle(refPlayer.position, 0.3f, 1 << 8); //Definicion suelo
-            anim.SetBool("enSuelo", enSuelo); //Animator suelo
+            if (onLadder == false)
+            {
+                anim.SetBool("enSuelo", enSuelo); //Animator suelo
+            }
 
             float movX;
 
@@ -98,16 +105,12 @@ public class PersonajeOscar : MonoBehaviour
             }
             Pausa();
             Atacar();
+           
+            
         }
-        /*
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            tengoHacha = true;
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            tengoPalanca = true;
-        }*/
+        
+        
+        
 
 
 
@@ -116,9 +119,15 @@ public class PersonajeOscar : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float movY;
+        movY = Input.GetAxisRaw("Vertical");
+        if (movY == 0)
+        {
+            anim.SetBool("SubirEscalera", false);
+        }
         if (jump)
         {
-
+            sonidoSalto.Play();
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             jump = false;
 
@@ -129,10 +138,17 @@ public class PersonajeOscar : MonoBehaviour
 
         if (hp <= 0)
         {
+            
+            anim.Play("Muerte");
+            
             canvasController.iniciarFadeOut();
         }
     }
 
+    public void AudioMorir()
+    {
+        AudioMuerte.Play();
+    }
 
     public void CogerHacha()
     {
@@ -167,6 +183,7 @@ public class PersonajeOscar : MonoBehaviour
                    // attackColliderHacha.enabled = true;
                     transform.position = transform.position + new Vector3(0.009f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
                     anim.SetTrigger("Atacar");
+                    AudioAtaque.Play();
                 }
             }
 
@@ -177,6 +194,7 @@ public class PersonajeOscar : MonoBehaviour
                    // attackColliderPalanca.enabled = true;
                     transform.position = transform.position + new Vector3(0.009f, 0, 0); //Evita un pequeño fallo que no nos permite atacar al estar quietos
                     anim.SetTrigger("Atacar");
+                    AudioAtaque.Play();
                 }
             }
 
@@ -186,6 +204,8 @@ public class PersonajeOscar : MonoBehaviour
            
         }
     }
+
+    
 
     public void AtacarArma()
     {
@@ -246,7 +266,7 @@ public class PersonajeOscar : MonoBehaviour
 
     public void TakeHit()
     {
-        if (hp > 0)
+        if (hp > 0) 
         {
             hp -= 1;
         }
@@ -280,20 +300,41 @@ public class PersonajeOscar : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag =="Enemy")
+        {
+            hp -= 1;
+            anim.SetTrigger("Dañado");
+        }
+
+        if (collision.tag == "Boss")
+        {
+            hp -= 1;
+            anim.SetTrigger("Dañado");
+        }
+    }
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.tag == ("Escalera"))
         {
             if (Input.GetAxisRaw("Vertical") !=0)
             {
+                float movY;
+                movY = Input.GetAxisRaw("Vertical");
                 escaleraCollider = col.GetComponent<BoxCollider2D>();
-
+               
                 rb.velocity = new Vector2(rb.velocity.x, Input.GetAxisRaw("Vertical") * climbSpeed);
                 rb.gravityScale = 0;
                 onLadder = true;
                 //enSuelo = false;
                 usingLadder = onLadder;
                 escaleraCollider.enabled = false;
+
+                if (movY!=0)
+                {
+                    anim.SetBool("SubirEscalera", true);
+                }
                 
             }else if(Input.GetAxisRaw("Vertical") ==0)
             {
@@ -307,11 +348,20 @@ public class PersonajeOscar : MonoBehaviour
     {
         if (collision.tag == ("Escalera") &&onLadder)
         {
+            float movY;
+            movY = Input.GetAxisRaw("Vertical");
+
+
             escaleraCollider = collision.GetComponent<BoxCollider2D>();
             rb.gravityScale = 4;
             onLadder = false;
             usingLadder = onLadder;
             escaleraCollider.enabled = true;
+
+            if (movY ==0)
+            {
+                anim.SetBool("SubirEscalera", false);
+            }
             if (!enSuelo)
             {
                // rb.velocity = new Vector2(rb.velocity.x, exitHop);

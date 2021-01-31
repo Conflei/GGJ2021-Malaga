@@ -45,7 +45,7 @@ public class CanvasController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .1f); //
+        float valorAlfa = Mathf.Lerp(telaNegra.color.a, valorAlfaDeseadoTelaNegra, .08f); //
         telaNegra.color = new Color(0, 0, 0, valorAlfa);
 
         if (valorAlfa > 0.99f && valorAlfaDeseadoTelaNegra == 1)
