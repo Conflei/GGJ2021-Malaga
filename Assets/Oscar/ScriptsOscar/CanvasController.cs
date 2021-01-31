@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
-    public Canvas canvasPausa;
+    public GameObject canvasPausa;
     public Image telaNegra;
     public Image barraVerde;
     float valorAlfaDeseadoTelaNegra;
-    public Canvas CanvasArma;
-    public Canvas CanvasDroga;
-    public Canvas CanvasLuz;
+    public GameObject CanvasArma;
+    public GameObject CanvasDroga;
+    public GameObject CanvasLuz;
 
     private PersonajeOscar personaje;
 
@@ -21,10 +21,10 @@ public class CanvasController : MonoBehaviour
     {
         telaNegra.color = new Color(0, 0, 0); //Color inicial fade.
         valorAlfaDeseadoTelaNegra = 0;
-        canvasPausa.enabled = false;
-        CanvasArma.enabled = false;
-        CanvasDroga.enabled = false;
-        CanvasLuz.enabled = false;
+        canvasPausa.SetActive(false);
+        CanvasArma.SetActive(false);
+        CanvasDroga.SetActive(false);
+        CanvasLuz.SetActive(false);
         personaje = this.GetComponent<PersonajeOscar>();
     }
 
@@ -58,44 +58,40 @@ public class CanvasController : MonoBehaviour
 
     public void CerrarMenuDroga()
     {
-        CanvasDroga.enabled = false;
+        CanvasDroga.SetActive(false);
         Time.timeScale = 1;
     }
     public void CerrarMenuArma()
     {
-        CanvasArma.enabled = false;
+        CanvasArma.SetActive(false);
         Time.timeScale = 1;
        
     }
 
     public void CerrarMenuLuz()
     {
-        CanvasLuz.enabled = false;
+        CanvasLuz.SetActive(false);
         Time.timeScale = 1;
     }
-    private void OnCollisionEnter2D(Collision2D col)
+
+    public void ObjectAcquired(ObjectType type)
     {
-        if (col.collider.tag =="escogerArma")
+        switch (type)
         {
-            
-            CanvasArma.enabled = true;
-            Destroy(col.gameObject);
-            Time.timeScale = 0;
-        }
-
-        if (col.collider.tag == "escogeDroga")
-        {
-            CanvasDroga.enabled = true;
-            Destroy(col.gameObject);
-            Time.timeScale = 0;
-        }
-
-        if (col.collider.tag =="escogeLuz")
-        {
-            personaje.innerLight.SetActive(false);
-            CanvasLuz.enabled = true;
-            Destroy(col.gameObject);
-            Time.timeScale = 0;
+            case ObjectType.Light:
+                personaje.innerLight.SetActive(false);
+                CanvasLuz.SetActive(true);
+                break;
+            case ObjectType.Weapon:
+                CanvasArma.SetActive(true);
+                CanvasArma.gameObject.SetActive(true);
+                break;
+            case ObjectType.Drug:
+                CanvasDroga.SetActive(true);
+                CanvasDroga.gameObject.SetActive(true);
+                break;
+            case ObjectType.Key:
+                break;
         }
     }
 }

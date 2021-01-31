@@ -57,11 +57,12 @@ public class PersonajeOscar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        attackColliderHacha = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        attackColliderHacha = Hacha.GetComponent<BoxCollider2D>();
         Hacha.SetActive(false);
-        Palanca.SetActive(false);
+        
         attackColliderHacha.enabled = false;
-        attackColliderPalanca = transform.GetChild(3).GetComponent<BoxCollider2D>();
+        attackColliderPalanca = Palanca.GetComponent<BoxCollider2D>();
+        Palanca.SetActive(false);
         LamparaLuz.SetActive(false);
         LinternaLuz.SetActive(false);
         AbalorioSalto.SetActive(false);
@@ -249,13 +250,13 @@ public class PersonajeOscar : MonoBehaviour
             if (active)
             {
                 anim.enabled = false; //Para evitar que se reproduzcan animaciones con el menu de pausa
-                canvasController.canvasPausa.enabled = true;
+                canvasController.canvasPausa.SetActive(true);
                 Time.timeScale = 0;
             }
             else 
             {
                 anim.enabled = true; //Activa las animaciones.
-                canvasController.canvasPausa.enabled = false;
+                canvasController.canvasPausa.SetActive(false);
                 Time.timeScale = 1; 
             }
         }
