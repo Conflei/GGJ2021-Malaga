@@ -60,7 +60,7 @@ public class EnemyTrackingSystem : MonoBehaviour
 
         float dist = Vector3.Distance(currentPos.position, targetPos.position);
 
-        time = (dist * 3f) / 20f;
+        time = (dist * 4f) / 20f;
  
         return time;
     }

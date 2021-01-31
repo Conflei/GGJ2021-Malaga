@@ -113,6 +113,7 @@ public class PersonajeOscar : MonoBehaviour
 
     }
 
+
     private void FixedUpdate()
     {
         if (jump)
@@ -123,17 +124,6 @@ public class PersonajeOscar : MonoBehaviour
 
         }
 
-        if (tengoHacha)
-        {
-            Hacha.SetActive(true);
-        }
-        if (tengoPalanca)
-        {
-            Palanca.SetActive(true);
-        }
-
-
-
 
         canvasController.barraVerde.fillAmount = (float)hp / maxHp;
 
@@ -142,15 +132,21 @@ public class PersonajeOscar : MonoBehaviour
             canvasController.iniciarFadeOut();
         }
     }
+
+
     public void CogerHacha()
     {
         tengoHacha = true;
-        Destroy(Palanca);
+        Hacha.SetActive(true);
+        Palanca.SetActive(false);
+        StartCoroutine(canvasController.ShowTextWorker("El hacha hara mas daño al enemigo"));
     }
     public void CogerPalanca()
     {
         tengoPalanca = true;
-        Destroy(Hacha);
+        Palanca.SetActive(true);
+        Hacha.SetActive(false);
+        StartCoroutine(canvasController.ShowTextWorker("La palanca rompe puertas mas rapido"));
     }
     
     public void ActualizarVida()
@@ -224,11 +220,16 @@ public class PersonajeOscar : MonoBehaviour
     public void Abalorio()
     {
         AbalorioSalto.SetActive(true);
-        maxHp += 2;
+        maxHp += 4;
+        hp += 4;
+        canvasController.IncreaseLife();
+        StartCoroutine(canvasController.ShowTextWorker("Tu vida ha incrementado"));
     }
     public void Droga()
     {
         fuerzaSalto += 50;
+        speed += 2;
+        StartCoroutine(canvasController.ShowTextWorker("Hora eres mas fuerte y mas rapido"));
     }
    
     public void Linterna()
@@ -241,6 +242,14 @@ public class PersonajeOscar : MonoBehaviour
     {
         LamparaLuz.SetActive(true);
         Destroy(LinternaLuz);
+    }
+
+    public void TakeHit()
+    {
+        if (hp > 0)
+        {
+            hp -= 1;
+        }
     }
 
     private void Pausa()

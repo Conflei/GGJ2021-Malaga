@@ -6,7 +6,7 @@ public class InteractiveObject : MonoBehaviour
 {
 
     private CanvasController canvas;
-    private ObjectType myType;
+    private ObjectType myType = ObjectType.Key;
 
     private bool touched = false;
     // Start is called before the first frame update
@@ -40,15 +40,40 @@ public class InteractiveObject : MonoBehaviour
                     break;
                 case "Key":
                     myType = ObjectType.Key;
+                    this.GetComponent<SpriteRenderer>().enabled = false;
                     break;
                 case "LockedDoor":
+                    myType = ObjectType.LockedDoor;
                     break;
             }
 
-            touched = true;
-            transform.GetChild(0).gameObject.SetActive(false);
+            if (transform.childCount > 0)
+            {
+                touched = true;
+                transform.GetChild(0).gameObject.SetActive(false);
+            }
+            
             canvas.ObjectAcquired(myType);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (gameObject.name == "LockedDoor")
+            {
+                myType = ObjectType.LockedDoor;
+
+
+                if (canvas.personaje.hasKey)
+                {
+                    this.gameObject.SetActive(false);
+                }
+            }
+        }
+
+        canvas.ObjectAcquired(myType);
     }
 }
 
@@ -57,6 +82,7 @@ public enum ObjectType
     Light,
     Weapon,
     Drug,
-    Key
+    Key,
+    LockedDoor
 }
 

@@ -141,10 +141,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -153,9 +153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hacha
-
-'
+  m_Text: Hacha
 --- !u!1 &866134670
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 148.6, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &866134674
 CanvasRenderer:
@@ -222,7 +220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -362,10 +360,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -374,9 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Palanca
-
-'
+  m_Text: Palanca
 --- !u!1 &1677014064
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,8 +409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -145, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1677014068
 CanvasRenderer:
@@ -583,10 +579,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -595,9 +591,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hacha
-
-'
+  m_Text: Palanca
 --- !u!1 &550901111982114760
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +628,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -145, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9011625083201781930
 CanvasRenderer:
@@ -851,8 +845,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -145, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3902190262887668790
 CanvasRenderer:
@@ -1021,10 +1015,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -1033,9 +1027,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Palanca
-
-'
+  m_Text: Palanca
 --- !u!1 &4722539857663707990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,8 +1064,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 148.6, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5029794217625090341
 CanvasRenderer:
@@ -1242,10 +1234,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -1254,9 +1246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hacha
-
-'
+  m_Text: Palanca
 --- !u!1 &5955239348991449510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,8 +1359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113, y: -40}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 148.6, y: -35}
+  m_SizeDelta: {x: 231.06815, y: 99.96127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6294365947874519991
 CanvasRenderer:
@@ -1539,10 +1529,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a837ef464c1bc4f0f92265f20d1a6e29, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -1551,9 +1541,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Palanca
-
-'
+  m_Text: Palanca
 --- !u!1 &7646157988870620541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,9 +1967,14 @@ MonoBehaviour:
   canvasPausa: {fileID: 7646157989520600229}
   telaNegra: {fileID: 7646157990111224025}
   barraVerde: {fileID: 7646157990701454297}
+  barraRoja: {fileID: 0}
+  barraNegra: {fileID: 0}
   CanvasArma: {fileID: 609489996}
   CanvasDroga: {fileID: 739194049376032138}
   CanvasLuz: {fileID: 5955239348991449510}
+  fullBarReference: {fileID: 0}
+  uiKey: {fileID: 0}
+  bottomText: {fileID: 0}
 --- !u!1 &7646157990111224027
 GameObject:
   m_ObjectHideFlags: 0

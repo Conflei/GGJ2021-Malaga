@@ -9,12 +9,21 @@ public class CanvasController : MonoBehaviour
     public GameObject canvasPausa;
     public Image telaNegra;
     public Image barraVerde;
+    public Image barraRoja;
+    public Image barraNegra;
+
     float valorAlfaDeseadoTelaNegra;
     public GameObject CanvasArma;
     public GameObject CanvasDroga;
     public GameObject CanvasLuz;
 
-    private PersonajeOscar personaje;
+    public GameObject fullBarReference;
+
+    public PersonajeOscar personaje { set; get; }
+
+    public GameObject uiKey;
+
+    public Text bottomText;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +59,13 @@ public class CanvasController : MonoBehaviour
         return SceneManager.GetActiveScene().buildIndex;
     }
 
+    public void IncreaseLife()
+    {
+        barraVerde.transform.localScale = barraNegra.transform.localScale = barraRoja.transform.localScale = fullBarReference.transform.localScale;
+        barraVerde.transform.position = barraNegra.transform.position = barraRoja.transform.position = fullBarReference.transform.position;
+        
+    }
+
 
     public void iniciarFadeOut()
     {
@@ -76,7 +92,7 @@ public class CanvasController : MonoBehaviour
 
     public void ObjectAcquired(ObjectType type)
     {
-        print("object acquired " + type);
+        
         switch (type)
         {
             case ObjectType.Light:
@@ -91,7 +107,33 @@ public class CanvasController : MonoBehaviour
                 CanvasDroga.gameObject.SetActive(true);
                 break;
             case ObjectType.Key:
+                uiKey.SetActive(true);
+                personaje.hasKey = true;
                 break;
+            case ObjectType.LockedDoor:
+                if (!personaje.hasKey)
+                {
+                    StartCoroutine(ShowTextWorker("Encuentra la llave"));
+                }
+                break;
+        }
+    }
+
+    public IEnumerator ShowTextWorker(string text)
+    {
+        bottomText.text = text;
+        var cg = bottomText.GetComponent<CanvasGroup>();
+        cg.alpha = 0f;
+        while (cg.alpha < 1f)
+        {
+            cg.alpha += 0.1f;
+            yield return null;
+        }
+        yield return new WaitForSeconds(1f);
+        while (cg.alpha > 0f)
+        {
+            cg.alpha -= 0.1f;
+            yield return null;
         }
     }
 }
